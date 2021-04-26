@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./dist/dist-backend/backend_bundle.js",
+    "start:dev": "nodemon ./dist/dist-backend/backend_bundle.js",
     "watch:frontend": "webpack --config webpack-frontend.config.js --watch",
     "watch:backend": "webpack --config webpack-backend.config.js --watch"
   },
@@ -20,6 +21,7 @@
     "redux": "^4.1.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.7",
     "ts-loader": "^9.1.1",
     "typescript": "^4.2.4",
     "typescript-cli": "^0.1.0",
