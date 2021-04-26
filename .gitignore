@@ -1,0 +1,4 @@
+/node_modules
+/dist/dist-backend/index_bundle*
+/dist/dist-frontend/index_bundle*
+/test-upload-files
