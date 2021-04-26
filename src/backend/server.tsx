@@ -4,6 +4,7 @@ import * as path from 'path'
 import * as React from 'react'
 import * as reactDOMServer from 'react-dom/server'
 import { Provider } from 'react-redux'
+import { StaticRouter } from 'react-router-dom'
 import { App } from '../frontend/app'
 import { store } from '../frontend/redux-components/store'
 
@@ -26,7 +27,9 @@ app.get('*', (req, res) => {
 
 		const reactHtml = renderToString(
 			<Provider store={store}>
-				<App />
+				<StaticRouter location={req.url}>
+					<App />
+				</StaticRouter>
 			</Provider>)
 		const html = data.replace('{{HTML}}', reactHtml)
 		res.status(200).send(html)
