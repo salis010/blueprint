@@ -1,0 +1,268 @@
+{
+  "hash": "46ce7b0f7133aa90f912",
+  "version": "5.35.1",
+  "publicPath": "/assets/",
+  "outputPath": "/Users/stephen/Documents/programming/blueprint/dist/dist-frontend",
+  "assetsByChunkName": {
+    "main": [
+      "main.57adb310391da5bf31f6.js"
+    ],
+    "vendor": [
+      "vendor.248ee85ef43dbe8dfd25.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "vendor.248ee85ef43dbe8dfd25.js",
+      "size": 1275654,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "chunkhash": "248ee85ef43dbe8dfd25",
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "vendor.248ee85ef43dbe8dfd25.js.map"
+        }
+      },
+      "chunkNames": [
+        "vendor"
+      ],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "sourceMap",
+          "name": "vendor.248ee85ef43dbe8dfd25.js.map",
+          "size": 1440612,
+          "emitted": false,
+          "comparedForEmit": false,
+          "cached": true,
+          "info": {
+            "development": true
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [
+            "vendor"
+          ],
+          "auxiliaryChunkIdHints": [
+            "vendors"
+          ],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [
+            "vendor"
+          ],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        "vendor"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "main.57adb310391da5bf31f6.js",
+      "size": 16972,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "chunkhash": "57adb310391da5bf31f6",
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "main.57adb310391da5bf31f6.js.map"
+        }
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "sourceMap",
+          "name": "main.57adb310391da5bf31f6.js.map",
+          "size": 12365,
+          "emitted": false,
+          "comparedForEmit": false,
+          "cached": true,
+          "info": {
+            "development": true
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [
+            "main"
+          ],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [
+            "main"
+          ],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": false,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 9224,
+      "sizes": {
+        "javascript": 5709,
+        "runtime": 3515
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.57adb310391da5bf31f6.js"
+      ],
+      "auxiliaryFiles": [
+        "main.57adb310391da5bf31f6.js.map"
+      ],
+      "hash": "57adb310391da5bf31f6",
+      "childrenByOrder": {},
+      "id": "main",
+      "siblings": [
+        "vendor"
+      ],
+      "parents": [],
+      "children": [],
+      "modules": [],
+      "origins": []
+    },
+    {
+      "rendered": false,
+      "initial": true,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors) (name: vendor)",
+      "size": 1215598,
+      "sizes": {
+        "javascript": 1215598
+      },
+      "names": [
+        "vendor"
+      ],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "vendor.248ee85ef43dbe8dfd25.js"
+      ],
+      "auxiliaryFiles": [
+        "vendor.248ee85ef43dbe8dfd25.js.map"
+      ],
+      "hash": "248ee85ef43dbe8dfd25",
+      "childrenByOrder": {},
+      "id": "vendor",
+      "siblings": [
+        "main"
+      ],
+      "parents": [],
+      "children": [],
+      "modules": [],
+      "origins": []
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "vendor",
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "vendor.248ee85ef43dbe8dfd25.js"
+        },
+        {
+          "name": "main.57adb310391da5bf31f6.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "auxiliaryAssets": [
+        {
+          "name": "main.57adb310391da5bf31f6.js.map"
+        },
+        {
+          "name": "vendor.248ee85ef43dbe8dfd25.js.map"
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "vendor",
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "vendor.248ee85ef43dbe8dfd25.js"
+        },
+        {
+          "name": "main.57adb310391da5bf31f6.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "auxiliaryAssets": [
+        {
+          "name": "main.57adb310391da5bf31f6.js.map"
+        },
+        {
+          "name": "vendor.248ee85ef43dbe8dfd25.js.map"
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": [],
+  "generator": "loadable-components"
+}

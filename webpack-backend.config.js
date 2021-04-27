@@ -1,13 +1,14 @@
-const nodeExternals = require('webpack-node-externals')
 const path = require("path")
+const webpack = require('webpack');
+const nodeExternals = require('webpack-node-externals');
 
 const env = process.env.NODE_ENV
 
-module.exports = {
+module.exports =  {
     entry: "./src/backend/server.tsx",
     output: {
         path: path.resolve(__dirname, "dist", "dist-backend"),
-        filename: "backend_bundle.js"
+        filename: "[name].js"
     },
     target: "node",
     node: {
@@ -26,9 +27,19 @@ module.exports = {
             },
         ]
     },
+    plugins: [
+        new webpack.DefinePlugin({ __isBrowser__: "false" })
+    ],
     mode: env || 'development',
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
     },
-    externals: [nodeExternals()]
+    externals: [nodeExternals({
+        allowlist: [
+            /^@loadable\/component$/,
+            /^react$/,
+            /^react-dom$/,
+            /^loadable-ts-transformer$/,
+            ]
+        })]
 }
